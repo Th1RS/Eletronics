@@ -1,0 +1,321 @@
+.inputPadrao {
+    width: 70%;
+    outline: none;
+    /* transition: ; aqui temos que ver ainda como se aplica o transition para colocar um suave mudança quando o elemento estiver em foco */
+}
+/* .inputPadrao:focus{
+
+} */
+.bordaPadrao{
+    border-radius: 0.3rem;
+}
+.tamanhoPadraoHeader{ 
+    height: 4rem;
+}
+.searchContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+.searchInput{
+    background-color: var(--branco);
+    border: none;
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+#buttonPesquisa{
+    width: 5rem;
+    background-color: var(--vermelho);
+    border: none;
+    cursor: pointer;
+    border-radius: 0rem 0.3rem 0.3rem 0rem;
+    transition: all 0.5s ease;
+}
+#buttonPesquisa:hover{
+    background-color: var(--vermelhoEscuro);
+}
+.contIconA{
+    background-color: var(--cinza);
+    display: flex;
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+}
+.iconSize{
+    height: 3.3rem;
+    padding: 0.3rem;
+    /* width: 1; */
+}
+.shoppingButton{
+    background-color: var(--verde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+    padding: 0.3rem 1.5rem 0.3rem 1rem;
+    transition: all 0.5s ease;
+}
+.shoppingButton:hover{
+    background-color: var(--verdeEscuro);
+}
+.shoppingAcont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30rem;
+}
+
+/*
+Aqui se inicia os elementos do nav
+*/
+.navegacao > ul {
+    display: flex;
+    background-color: var(--vermelho);
+    /* width: 100%; */
+    height: 100%;
+    /* justify-items: center; */
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+    color: var(--branco);
+}
+.navegacao > ul > li{
+    border-left: #D9D9D9 solid 2px;
+    border-right: #D9D9D9 solid 2px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.navegacao > ul :first-child{
+    border-left: 3px solid #D9D9D9;
+}
+.navegacao > ul :last-child{
+    border-right: 3px solid #D9D9D9;
+}
+.navegacao > ul > li:hover{
+    background-color: var(--vermelhoEscuro);
+}
+/*
+fim dos comeponetes da nav
+
+e
+
+Inicio da section hero
+*/
+.heroConteiner{
+    background-color: var(--preto);
+    padding: 2rem 3rem;
+}
+.heroTitulo{
+    color: var(--branco);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Zen Dots';
+}
+/*iniciando os componetes do carrosel */ 
+
+.tituloDestaqueVermelhoH2{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 4rem 2rem 2rem 2rem;
+}
+.titulo-customizado{
+    color: var(--corFont);
+}
+.imgTituloH2{
+    background-color: var(--vermelho);
+    padding: 0.7rem 0.8rem;
+    /* display: inline-block; */
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    
+    /* height: auto;
+    width: auto; */
+    margin-right: 1rem;
+}
+.conteinerSlides{
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+}
+.carroselCard{
+    background-color: var(--cinza2);
+    display: none;
+    align-items: stretch;
+    /* justify-content: space-evenly; */
+    flex-direction: row;
+    /* min-height: 100px; */
+    height: 150px;
+    width: 450px;
+    color: var(--branco);
+    
+
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  /* Esconde a barra de rolagem padrão */
+    scrollbar-width: none; /* Firefox */
+
+    /* padding: 3rem; */
+}
+/* .carroselCard * > div{
+    flex: 1;
+} */
+.cardDivisor{
+    display: flex;
+    flex-direction: column;
+    /* padding: 2rem; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* margin: 0.5rem; */
+    flex: 1;
+}
+.imgCard{
+    /* padding: 0rem; */
+    background-color: var(--verde);
+    max-width: 10rem;
+    /* margin: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.imgCard > img{
+    min-height: auto;
+}
+.pequenoDestaqueTitulo{
+    text-transform: uppercase;
+    padding: 0.5rem 0rem;
+    margin: 0.3rem 0rem;
+    text-align: center;
+}
+.linkFora{
+    align-self: flex-end;
+    justify-self: end;
+    margin-top: auto;
+    color: var(--branco);
+    margin-right: 0.3rem;
+}
+.textCard{
+    text-align: center;
+}
+#prev, #next{
+    position: absolute;
+    display: none;
+    top: 30%;
+    transform: translateY(-30%);
+    width: 40px;
+    height: 40px;
+    background-color: var(--branco);
+    border: var(--cinza2) 1px solid;
+    color: var(--verde);
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#prev {
+    left: 20px;
+}
+#next{
+    right: 20px;
+}
+
+/*iniciando a seção de novos produtos */
+
+.novosProdutos{
+    padding-bottom: 5rem;
+}
+.listCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+} 
+
+.imgCardProdutos{
+    max-width: 350px;
+    border-radius: 5px 5px 0px 0px;
+    /* height: auto; */
+}
+.descricaoProduto{
+    max-width: 350px;
+    min-height: 150px;
+    flex-wrap: wrap;        /* permite quebrar linha se não couber */
+    background-color: #fff;
+    padding-left: 0.4rem;
+    border-radius: 0px 0px 5px 5px;
+}
+.descricaoPSpan{
+    font-weight: bolder;
+    font-size: larger;
+    padding-bottom: 0.4rem;
+}
+.descontEmVermelho{
+    color: var(--vermelho);
+    font-weight: bold;
+    padding-bottom: 0.2rem;
+}
+.valorPosDescont{
+    color: var(--verde);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* finalizado */ 
+.principaisOfertas{
+    background-color: var(--cinza);
+    padding-bottom: 5rem;
+}
+/* finalizado */
+.contatos{
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 3rem 5rem 3rem;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.imgContatos{
+    background-color: var(--vermelho);
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.contatoDivisor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.menorDestaque{
+    font-size: medium;
+    color: var(--cinza);
+}
+.contatos p {
+    padding-left: 10px;
+}
+footer h2{
+    color: var(--vermelhoEscuro);
+    padding: 0rem 3rem 1rem 0rem;
+    
+}
+footer p{
+    color: var(--branco);
+    font-weight: bolder;
+    font-size: medium;
+    max-width: 70ch;
+    letter-spacing: 4px;
+}

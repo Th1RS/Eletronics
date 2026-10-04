@@ -1,0 +1,54 @@
+
+@media (max-width:1024px){
+    header {
+        width: 100%;
+    }
+    .hero{
+        width: 100%;
+    }
+    .navegacao{
+        /* display: none; */
+        font-size: xx-small;
+    }
+    .navegacao > ul > li { 
+        border: 0px; 
+    }
+    .navegacao > ul :last-child{
+        border: 0px;
+    }
+    .navegacao > ul :first-child{
+        border: 0px;
+    }
+    .textButtonCar{
+        display: none;
+    }
+    .contatos{
+        display: none;
+    }
+    img{
+        max-width: 100%;
+    }
+    .conteinerSlides > .card-3{
+        display: none;
+    }
+    .carroselCard{
+        width: 300px;
+    }
+    .shoppingButton{
+        justify-items: center;
+        padding: 1rem;
+    }
+    .shoppingAcont{
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    .tituloDestaqueVermelhoH2{
+        padding: 2rem;
+    }
+    #text{
+        font-size: 12px;
+    }
+    footer > h2 { 
+        font-size: 16px;
+    }
+}
