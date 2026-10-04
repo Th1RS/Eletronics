@@ -137,7 +137,7 @@ Inicio da section hero
     border-radius: 100%;
     display: flex;
     align-items: center;
-    
+
     /* height: auto;
     width: auto; */
     margin-right: 1rem;
@@ -155,7 +155,7 @@ Inicio da section hero
     flex-direction: row;
     /* min-height: 100px; */
     height: 150px;
-    width: 450px;
+    width: 350px;
     color: var(--branco);
     
 
